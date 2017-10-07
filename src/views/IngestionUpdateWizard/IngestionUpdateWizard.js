@@ -18,6 +18,7 @@ const transformer = values => {
 class IngestionUpdateForm extends Component {
   constructor(props) {
     super(props);
+    console.log("params", JSON.stringify(this.props.match.params.page));
     this.state = { msg: null,
                    msgErr: null 
                   }
@@ -61,7 +62,7 @@ class IngestionUpdateForm extends Component {
             </div>
         }
 
-        <DatasetList/>
+        <DatasetList page={this.props.page}/>
 
         
 

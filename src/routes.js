@@ -3,6 +3,7 @@ const routes = {
   '/home': 'Home',
   '/dashboard': 'Dashboard',
   '/ingestionform': 'IngestionWizard',
+  '/ingestionupdateform/:page': 'IngestionUpdateWizard',
   '/ingestionupdateform': 'IngestionUpdateWizard',
   '/ontologies': 'Ontologies'
 };

@@ -35,6 +35,7 @@ class Full extends Component {
             <div className="container-fluid" style={divStyle}>
               <Switch>
                 <Route path="/home" name="Dashboard" exact component={Dashboard}/>
+                <Route path="/ingestionupdatewizzard/:page" name="Forms" component={IngestionUpdateWizard} />
                 <Route path="/ingestionupdatewizzard" name="Forms" component={IngestionUpdateWizard} />
                 <Route path="/ingestionwizzard" name="Forms" component={IngestionWizard} />
                 <Route path="/ontologies" name="Ontologies" component={Ontologies} />

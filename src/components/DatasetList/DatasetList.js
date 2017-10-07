@@ -4,13 +4,14 @@ import { serviceurl } from '../../config/serviceurl.js'
 class DatasetList extends Component {
     constructor(props){
         super(props);
-
+        console.log("PROPS",JSON.stringify(props));
         this.state = {
             list: []
         }
     }
 
     componentDidMount() {
+        
         this.getList().then(data => {
             this.setState({
                 list: data
@@ -44,10 +45,10 @@ class DatasetList extends Component {
 
   render() {
     return (
-        <ul>
+        <ul className='list-group'>
             {
                 this.state.list.map((item, index) => 
-                    <li
+                    <li className='list-group-item'
                         key={item.dcatapit.identifier}
                         onClick={() => this.itemClicked(index)}
                     >
