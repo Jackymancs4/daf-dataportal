@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {createMetacatalog} from '../../helpers/TrasformFormToDcat.js'
-import WizardForm from '../../components/IngestionWizard/WizardForm'
+
 import {getJsonDataschema, sendPostDataMeta} from '../../components/IngestionWizard/inputform_reader.js'
 import { addDataset } from './../../actions.js'
 import {reset} from 'redux-form';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
+import DatasetList from '../../components/DatasetList/DatasetList'
 
 const transformer = values => {
   var metacatalog = {}
@@ -42,7 +43,7 @@ class IngestionUpdateForm extends Component {
   }
 }
 
-
+//<WizardForm onSubmit={this.showResults.bind(this)} />
   render() {
     return (
       <div className="animated fadeIn">
@@ -59,7 +60,11 @@ class IngestionUpdateForm extends Component {
               {this.state.msg} 
             </div>
         }
-        <WizardForm onSubmit={this.showResults.bind(this)} />
+
+        <DatasetList/>
+
+        
+
       </div>
     )
   }
