@@ -6,6 +6,7 @@ import Breadcrumb from '../../components/Breadcrumb/';
 import Aside from '../../components/Aside/';
 import Footer from '../../components/Footer/';
 import IngestionWizard from '../../views/IngestionWizard/';
+import IngestionUpdateWizard from '../../views/IngestionUpdateWizard/';
 import Ontologies from '../../views/Ontologies/';
 import Vocabulary from '../../views/Vocabulary/';
 import Dashboard from '../../views/Dashboard/';
@@ -34,6 +35,7 @@ class Full extends Component {
             <div className="container-fluid" style={divStyle}>
               <Switch>
                 <Route path="/home" name="Dashboard" exact component={Dashboard}/>
+                <Route path="/ingestionupdatewizzard" name="Forms" component={IngestionUpdateWizard} />
                 <Route path="/ingestionwizzard" name="Forms" component={IngestionWizard} />
                 <Route path="/ontologies" name="Ontologies" component={Ontologies} />
                 <Route path="/vocabulary" name="Vocabulary" component={Vocabulary} />

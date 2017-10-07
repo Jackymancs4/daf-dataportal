@@ -90,6 +90,9 @@ class Sidebar extends Component {
                   <li className="nav-item">
                     <NavLink to={'/ingestionwizzard'} className="nav-link" activeClassName="active">  Carica <span className="badge badge-danger">beta</span></NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink to={'/ingestionupdatewizzard'} className="nav-link" activeClassName="active">  Modifica <span className="badge badge-danger">beta</span></NavLink>
+                  </li>                  
                 </ul>
               </li>
 

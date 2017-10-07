@@ -1,0 +1,6 @@
+{
+  "name": "IngestionUpdateWizard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./IngestionUpdateWizard.js"
+}

@@ -45,7 +45,6 @@ class Dashboard extends Component {
 
 
   render() {
-
      const iframeStyle = {
       width: '100%',
       height: '300px',
@@ -53,13 +52,14 @@ class Dashboard extends Component {
     }
 
     return (
+
       <div className="container" >
 
         {/* CARDS */}
         <div className="row">
 
           {/* GRAPH */}
-          <h2> Ultime Dashboard </h2>
+          <h2> Ultime Dashboard</h2>
 
           {/* BOXES */}
           <div className="col-sm-12 col-md-12">
